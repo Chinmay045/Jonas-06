@@ -18,8 +18,8 @@ export default function App() {
     <p className="message">Step: {step}: {messages[step - 1]}Hello</p>
 
     <div className="buttons">
-      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }}>Previous</button>
-      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }}>Next</button>
+      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }} onClick={() => alert("Previous")}>Previous</button>
+      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }} onClick={() => alert("Next")}>Next</button>
     </div>
   </div>
 }
