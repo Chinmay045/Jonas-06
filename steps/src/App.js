@@ -8,6 +8,14 @@ const messages = [
 export default function App() {
   const step = 3;
 
+  function handlePreious() {
+    alert("Previous")
+  }
+
+  function handleNext() {
+    alert("Next");
+  }
+
   return <div className="steps">
     <div className="numbers">
       <div className={`${step >= 1 ? "active" : ""}`}>1</div>
@@ -18,8 +26,8 @@ export default function App() {
     <p className="message">Step: {step}: {messages[step - 1]}Hello</p>
 
     <div className="buttons">
-      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }} onClick={() => alert("Previous")}>Previous</button>
-      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }} onClick={() => alert("Next")}>Next</button>
+      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }} onClick={handlePreious}>Previous</button>
+      <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }} onClick={handleNext}>Next</button>
     </div>
   </div>
 }
